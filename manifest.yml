@@ -1,0 +1,4 @@
+---
+applications:
+- name: fish2
+  command: node app.js
