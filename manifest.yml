@@ -1,4 +1,4 @@
 ---
 applications:
-- name: fish2
+- name: JonathonIrelandApp
   command: node app.js
