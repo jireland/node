@@ -1,0 +1,5 @@
+resources:
+- name: jonathon-node
+  type: git
+  source:
+     uri: https://github.com/
