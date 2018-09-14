@@ -2,4 +2,23 @@ resources:
 - name: jonathon-node
   type: git
   source:
-     uri: https://github.com/
+     uri: https://github.com/jireland/node
+     branch: master
+- name: jonathonireland-cf
+  type: cf
+  source: 
+    api: https://api.sys.gn01.pcf.dcsg.com
+    username: ((cf_user_nonprod))
+    password: ((cf_password_nonprod))
+    organization: fed
+    space: dev
+    skip_cert_check: true
+
+jobs:
+- name: build-and-push
+  plan:
+  - get: jonathon-node
+    trigger: true
+  - put: jonathonireland-cf
+    params: 
+      manifest: jonathon-node/manifest.yml
