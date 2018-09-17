@@ -1,5 +1,5 @@
 ---
 applications:
-- name: JonathonIrelandApp
+- name: JonathonApp
   command: node app.js
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
