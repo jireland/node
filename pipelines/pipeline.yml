@@ -10,7 +10,7 @@ resources:
     api: https://api.sys.gn01.pcf.dcsg.com
     username: ((cf_user_nonprod))
     password: ((cf_password_nonprod))
-    organization: fed
+    organization: bazaz-demo
     space: dev
     skip_cert_check: true
 
